@@ -1,6 +1,6 @@
 import reflex as rx
 
-from LAHacks.components import audio_capture
+from LAHacks.components import audio_capture, video_capture
 
 def assessment() -> rx.Component:
     """ Page for collecting information about symptoms. """
@@ -11,13 +11,17 @@ def assessment() -> rx.Component:
                 "Please describe your symptoms", 
                 size="8", 
                 font_family="Metropolis", 
-                font_weight="bold",),
+                font_weight="bold",
+                margin_top="40px"),
             rx.text(
                 "Describe your symptoms in detail:",
                 align="center", 
                 size="6",
                 width="800px",),
+            # Audio Recording
             audio_capture.index(),
+            #Video Recording
+            video_capture.index(),
             rx.button(
                 "Submit",
                 on_click=lambda: rx.redirect("/waiting"),
@@ -30,7 +34,8 @@ def assessment() -> rx.Component:
         ),
         align="center",
         spacing="7",
-        height="100vh"
+        overflow="auto",
+
     )
 
 

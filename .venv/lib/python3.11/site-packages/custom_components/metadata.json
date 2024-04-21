@@ -1,0 +1,222 @@
+{
+  "src/lib/components/ConversationDesign.react.js": {
+    "description": "",
+    "displayName": "ConversationDesign",
+    "methods": [
+      {
+        "name": "fetchDirectLineToken",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "resetToken",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "handleChannelChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "commitEverything",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "user_id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "session_id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "API_URL": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "directLineEndpoint": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        }
+      },
+      "directLineSecret": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'localhost'",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/LongTermMemory.react.js": {
+    "description": "",
+    "displayName": "LongTermMemory",
+    "methods": [
+      {
+        "name": "selectConversation",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "conv",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "expandNode",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "type",
+            "type": null
+          },
+          {
+            "name": "nodeName",
+            "type": null
+          },
+          {
+            "name": "nodeUri",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "API_URL": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/WorkingMemory.react.js": {
+    "description": "",
+    "displayName": "WorkingMemory",
+    "methods": [
+      {
+        "name": "selectConversation",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "conv",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "expandNode",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "type",
+            "type": null
+          },
+          {
+            "name": "nodeName",
+            "type": null
+          },
+          {
+            "name": "nodeUri",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "API_URL": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}

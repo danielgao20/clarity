@@ -1,0 +1,5 @@
+#remove-outline:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
