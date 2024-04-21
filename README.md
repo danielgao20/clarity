@@ -5,7 +5,7 @@ Google Gemini, Reflex, Python, Flask, Google Cloud, Figma
 
 ## Inspiration 💡
 
-In the past, one of our group members have suffered injuries of varying severities. He was immediately faced with a pressing dilemma-seek a primary care physician, the ER, or just wait it out? The problem with this situation is that it runs the risk of a wrong choice possibly leading to either wasted time or an increased severity of an untreated ailment. 
+In the past, one of our group members suffered an injury while playing basketball. He was immediately faced with a pressing dilemma-seek a primary care physician, the ER, or just wait it out? The problem with this situation is that it runs the risk of a wrong choice possibly leading to either wasted time or an increased severity of an untreated ailment. 
 
 On top of this, we realized the issue of wasted time is a larger issue in the healthcare field than we initially thought-nearly every primary care physician consultation takes countless extra minutes to ask the patient basic questions, leading to long wait times and overcrowded facilities.
 
