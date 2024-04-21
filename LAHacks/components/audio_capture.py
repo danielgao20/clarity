@@ -13,8 +13,7 @@ client = AsyncOpenAI(api_key=api_key)
 
 REF = "myaudio"
 
-
-class State(rx.State):
+class AudioState(rx.State):
     """The app state."""
 
     has_error: bool = False
@@ -72,11 +71,11 @@ class State(rx.State):
 
 capture = AudioRecorderPolyfill.create(
     id=REF,
-    on_data_available=State.on_data_available,
-    on_error=State.on_error,
-    timeslice=State.timeslice,
-    device_id=State.device_id,
-    use_mp3=State.use_mp3,
+    on_data_available=AudioState.on_data_available,
+    on_error=AudioState.on_error,
+    timeslice=AudioState.timeslice,
+    device_id=AudioState.device_id,
+    use_mp3=AudioState.use_mp3,
 )
 
 def index() -> rx.Component:
@@ -104,9 +103,9 @@ def index() -> rx.Component:
             rx.card(
                 rx.text("Transcript"),
                 rx.divider(),
-                rx.text(State.latest_transcript),
+                rx.text(AudioState.latest_transcript),
                 rx.cond(
-                    State.processing,
+                    AudioState.processing,
                     rx.text("..."),
                 ),
             ),

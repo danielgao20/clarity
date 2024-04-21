@@ -1,6 +1,7 @@
 {
   "python.analysis.extraPaths": [
     "./LAHacks/components/custom_components",
-    "./custom_components"
+    "./custom_components",
+    "./LAHacks/components/custom_components/reflex_video_capture"
   ]
 }
