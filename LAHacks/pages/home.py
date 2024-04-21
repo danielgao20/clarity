@@ -18,7 +18,7 @@ def home() -> rx.Component:
                 width="800px",),
             rx.button(
                 "Start Assessment",
-                # on_click=lambda: rx.redirect(docs_url),
+                on_click=lambda: rx.redirect("/assessment"),
                 size="3",
                 font_family="Metropolis",
                 background_color="#1B3EF3",
@@ -31,10 +31,6 @@ def home() -> rx.Component:
     )
 
 
-app = rx.App(
-    stylesheets=[
-        "/fonts/myfont.css",  # This path is relative to assets/
-    ],
-)
+app = rx.App()
 app.add_page(home)
 
