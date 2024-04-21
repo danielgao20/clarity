@@ -1,6 +1,7 @@
 import reflex as rx
 from LAHacks.components import audio_capture
 
+
 def a3() -> rx.Component:
     """ Second text input question """
     question = "How long have you been experiencing these symptoms?"
