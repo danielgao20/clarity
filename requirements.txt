@@ -2,3 +2,5 @@ reflex==0.4.8.post1
 openai==1.23.2
 reflex_audio_capture==0.0.2
 google-cloud-aiplatform==1.48.0
+Pillow==10.3.0
+reflex_webcam==0.0.5
