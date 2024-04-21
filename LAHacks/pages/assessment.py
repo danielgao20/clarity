@@ -1,5 +1,7 @@
 import reflex as rx
 
+from LAHacks.components import audio_capture
+
 def assessment() -> rx.Component:
     """ Page for collecting information about symptoms. """
     # Simple text display and a button to proceed. Actual data collection would need more functionality.
@@ -15,6 +17,7 @@ def assessment() -> rx.Component:
                 align="center", 
                 size="6",
                 width="800px",),
+            audio_capture.index(),
             rx.button(
                 "Submit",
                 on_click=lambda: rx.redirect("/waiting"),

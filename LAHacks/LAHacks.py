@@ -10,10 +10,6 @@ from LAHacks.pages import waiting
 docs_url = "https://reflex.dev/docs/getting-started/introduction/"
 filename = f"{config.app_name}/{config.app_name}.py"
 
-
-class State(rx.State):
-    """The app state."""
-
 def index() -> rx.Component:
     return rx.center(
         rx.theme_panel(),
