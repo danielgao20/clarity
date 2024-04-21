@@ -5,7 +5,8 @@ def a2() -> rx.Component:
     """ Video capture """
     return rx.center(
         rx.vstack(
-            rx.text("Please record a video of your injuries, show as much as you can.", size="8", font_family="Metropolis", font_weight="bold", margin_top="40px"),
+            rx.image(src="/logo.svg", width="5em", margin_top="50px"), 
+            rx.text("Please record a video of your injuries, show as many angles as you can.", size="8", font_family="Metropolis", font_weight="bold", margin_top="40px"),
             video_capture.index(),  # Adjust this part as needed
             rx.button("Next", on_click=lambda: rx.redirect("/a3")),
             align="center",

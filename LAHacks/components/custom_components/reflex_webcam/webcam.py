@@ -5,33 +5,21 @@ from reflex.vars import Var
 from typing import Any
 
 
+import reflex as rx
+from reflex.vars import Var
+from typing import Any, Dict
+
 class Webcam(rx.Component):
     """Wrapper for react-webcam component."""
-
-    # The React library to wrap.
     library = "react-webcam"
-
-    # The React component tag.
     tag = "Webcam"
-
-    # If the tag is the default export from the module, you can set is_default = True.
-    # This is normally used when components don't have curly braces around them when importing.
     is_default = True
     
-    # The props of the React component.
-    # Note: when Reflex compiles the component to Javascript,
-    # `snake_case` property names are automatically formatted as `camelCase`.
-    # The prop names may be defined in `camelCase` as well.
-
-    # enable/disable audio
+    # Properties
     audio: Var[bool] = False
-
-    # format of screenshot
     screenshot_format: Var[str] = "image/jpeg"  # type: ignore
-
-    # show camera preview and get the screenshot mirrored
     mirrored: Var[bool] = False
-
+    style: Var[Dict[str, Any]] = Var(default={})  # Add style property
 
     special_props: set[Var] = [Var.create("muted")]
 
@@ -42,9 +30,7 @@ class Webcam(rx.Component):
             ) + f"refs['mediarecorder_{self.id}'] = useRef(null)"
         return super()._get_hooks()
 
-
 webcam = Webcam.create
-
 
 def upload_screenshot(ref: str, handler: rx.event.EventHandler):
     """Helper to capture and upload a screenshot from a webcam component.
