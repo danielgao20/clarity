@@ -5,6 +5,7 @@ from rxconfig import config
 import reflex as rx
 from LAHacks.pages import home
 from LAHacks.pages import assessment
+from LAHacks.pages import a2, a3, a4, a5
 from LAHacks.pages import waiting
 
 docs_url = "https://reflex.dev/docs/getting-started/introduction/"
@@ -37,6 +38,10 @@ app = rx.App(
 )
 app.add_page(index)
 app.add_page(home.home)
+app.add_page(a2.a2)
+app.add_page(a3.a3)
+app.add_page(a4.a4)
+app.add_page(a5.a5)
 app.add_page(assessment.assessment)
 app.add_page(waiting.waiting)
 
