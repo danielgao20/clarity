@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: reflex-audio-capture
+Version: 0.0.2
+Summary: Experimental audio-recorder-polyfill component
+Author-email: Masen Furer <m_github@0x26.net>
+License: Apache-2.0
+Project-URL: homepage, https://github.com/masenf/reflex-audio-capture
+Keywords: reflex,reflex-custom-components
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: reflex >=0.4.8
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# reflex-audio-capture
+
+Cross-browser audio capture using audio-recorder-polyfill.
+
+This component is highly experimental.
+
+## Installation
+
+```bash
+pip install reflex-audio-capture
+```
+
+## Usage
+
+See audio-capture-demo for example usage.
