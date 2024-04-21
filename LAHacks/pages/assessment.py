@@ -7,20 +7,20 @@ def assessment() -> rx.Component:
         rx.vstack(
             rx.image(src="/logo.svg", width="5em", margin_top="50px"),  # Added margin_top to create padding at the top
             rx.text(
-                "Please describe your symptoms", 
+                "Please describe what happened", 
                 size="8", 
                 font_family="Metropolis", 
                 font_weight="bold",
                 margin_top="20px"),  # Maintain margin_top for space between logo and text
             rx.text(
-                "Describe your symptoms in detail:",
+                "Describe what happened in detail:",
                 align="center", 
                 size="6",
                 width="800px",),
             audio_capture.index(),  # Audio Recording
             rx.button(
                 "Submit",
-                on_click=lambda: rx.redirect("/loading"),
+                on_click=lambda: rx.redirect("/a2"),
                 size="3",
                 font_family="Metropolis",
                 background_color="#1B3EF3",
@@ -31,6 +31,7 @@ def assessment() -> rx.Component:
         align="center",
         spacing="7",
         overflow="auto",
+        height="100vh"
     )
 
 app = rx.App()

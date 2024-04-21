@@ -19,7 +19,7 @@ def waiting() -> rx.Component:
                 on_click=lambda: rx.redirect("https://drive.google.com/file/d/1obDI32xnVFmkwdviw6wJCGIOTpYBpOY-/view?usp=sharing"),
                 size="3",
                 font_family="Metropolis",
-                background_color="#4CAF50",
+                background_color="#1B3EF3",
             ),
             align="center",
             spacing="5"
