@@ -3,14 +3,9 @@
 from rxconfig import config
 
 import reflex as rx
-<<<<<<< Updated upstream
-from LAHacks.pages import home
-from LAHacks.pages import assessment
 from LAHacks.pages import a2, a3, a4, a5
-from LAHacks.pages import waiting
-=======
+
 from LAHacks.pages import home, assessment, waiting, loading
->>>>>>> Stashed changes
 
 docs_url = "https://reflex.dev/docs/getting-started/introduction/"
 filename = f"{config.app_name}/{config.app_name}.py"
