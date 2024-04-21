@@ -20,7 +20,7 @@ def assessment() -> rx.Component:
             audio_capture.index(),  # Audio Recording
             rx.button(
                 "Submit",
-                on_click=lambda: rx.redirect("/a2"),
+                on_click=lambda: rx.redirect("/loading"),
                 size="3",
                 font_family="Metropolis",
                 background_color="#1B3EF3",

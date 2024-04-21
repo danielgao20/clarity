@@ -21,7 +21,7 @@ def a5() -> rx.Component:
             audio_capture.index(),  # Audio Recording
             rx.button(
                 "Submit",
-                on_click=lambda: rx.redirect("/a5"),
+                on_click=lambda: rx.redirect("/loading5"),
                 size="3",
                 font_family="Metropolis",
                 background_color="#1B3EF3",

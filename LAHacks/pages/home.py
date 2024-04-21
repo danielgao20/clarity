@@ -30,6 +30,8 @@ def home() -> rx.Component:
             spacing="7",
             font_family="Metropolis",
         ),
+        rx.image(src="/logo.svg", width="5em", position="absolute", top="100px", right="100px"),
+
         height="100vh",
     )
 
