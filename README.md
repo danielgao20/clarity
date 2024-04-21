@@ -20,3 +20,5 @@ In turn, patients save travel time and come to the doctor with their information
 ## How we built it 🔨
 
 We used a combination of elements to build our product. Before building out our product, we mapped out the visuals and user experience through Figma. We then used Reflex's framework to construct our pages complete with a webcam and text responses. Gemini AI's LLM was then used in two unique ways in our product. Firstly, through training our model with Google Cloud, we were able to create a unique user experience by providing users with diagnostic questions specific to their situation. Secondly, we used the LLM to fill in the gaps in our speech-to-text functionality (eg "my leg in pain" --> "my leg [is] in pain").
+
+## Comments? / Questions? / Suggestions? 🤔
