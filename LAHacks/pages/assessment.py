@@ -35,7 +35,6 @@ def assessment() -> rx.Component:
         align="center",
         spacing="7",
         overflow="auto",
-
     )
 
 
