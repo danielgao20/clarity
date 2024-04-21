@@ -3,7 +3,7 @@
 ## Tech Stack 
 Google Gemini, Reflex, Python, Flask, Google Cloud, Figma
 
-## ## Inspiration
+## Inspiration
 
 In the past, one of our group members have suffered injuries of varying severities. He was immediately faced with a pressing dilemma-seek a primary care physician, the ER, or just wait it out? The problem with this situation is that it runs the risk of a wrong choice possibly leading to either wasted time or an increased severity of an untreated ailment. 
 
