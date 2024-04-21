@@ -27,9 +27,9 @@ def home() -> rx.Component:
             spacing="7",
             font_family="Metropolis",
         ),
-        height="100vh"
-    )
-
+        rx.image(src="/icon.svg", width="5em", position="absolute", top="100px", right="100px"),
+        height="100vh",
+    ),
 
 app = rx.App()
 app.add_page(home)
