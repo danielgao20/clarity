@@ -1,0 +1,6 @@
+{
+  "python.analysis.extraPaths": [
+    "./LAHacks/components/custom_components",
+    "./custom_components"
+  ]
+}
