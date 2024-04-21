@@ -119,6 +119,7 @@ def webcam_upload_component(ref: str) -> rx.Component:
                 ref=ref,
                 handler=VideoState.handle_screenshot,  # type: ignore
             ),
+            style={'borderRadius': '15px'},
             audio=True,
         ),
         rx.cond(
