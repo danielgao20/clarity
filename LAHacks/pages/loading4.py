@@ -5,12 +5,12 @@ import reflex as rx
 #     print("5 seconds")
 #     rx.redirect("/home")
 
-def loading() -> rx.Component:
+def loading4() -> rx.Component:
 
     js_redirect = """
     <script>
         setTimeout(function() {
-            window.location.href = '/a2'; // Adjust the URL as necessary
+            window.location.href = '/a5'; // Adjust the URL as necessary
         }, 1000);
     </script>
     """
@@ -18,7 +18,7 @@ def loading() -> rx.Component:
     # threading.Timer(5.0, redirect).start()
 
     return rx.center(
-        rx.hstack(
+        rx.vstack(
             rx.image(src="/loading.gif", width="10em", align="center",),
             rx.text(
                 "Waiting for ", 
@@ -36,5 +36,5 @@ def loading() -> rx.Component:
     ),
 
 app = rx.App()
-app.add_page(loading)
+app.add_page(loading4)
 

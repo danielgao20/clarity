@@ -6,6 +6,7 @@ import reflex as rx
 from LAHacks.pages import a2, a3, a4, a5
 
 from LAHacks.pages import home, assessment, waiting, loading
+from LAHacks.pages import loading2, loading3, loading4, loading5
 
 docs_url = "https://reflex.dev/docs/getting-started/introduction/"
 filename = f"{config.app_name}/{config.app_name}.py"
@@ -44,4 +45,8 @@ app.add_page(a5.a5)
 app.add_page(assessment.assessment)
 app.add_page(waiting.waiting)
 app.add_page(loading.loading)
+app.add_page(loading2.loading2)
+app.add_page(loading3.loading3)
+app.add_page(loading4.loading4)
+app.add_page(loading5.loading5)
 
