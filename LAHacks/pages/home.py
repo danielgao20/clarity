@@ -1,6 +1,7 @@
 import reflex as rx
 
 def home() -> rx.Component:
+    """ Home page with a button to start the medical assessment. """
     return rx.center(
         rx.vstack(
             rx.text(
@@ -26,7 +27,7 @@ def home() -> rx.Component:
             spacing="7",
             font_family="Metropolis",
         ),
-        height="100vh",
+        height="100vh"
     )
 
 

@@ -4,6 +4,8 @@ from rxconfig import config
 
 import reflex as rx
 from LAHacks.pages import home
+from LAHacks.pages import assessment
+from LAHacks.pages import waiting
 
 docs_url = "https://reflex.dev/docs/getting-started/introduction/"
 filename = f"{config.app_name}/{config.app_name}.py"
@@ -39,4 +41,6 @@ app = rx.App(
 )
 app.add_page(index)
 app.add_page(home.home)
+app.add_page(assessment.assessment)
+app.add_page(waiting.waiting)
 
