@@ -32,6 +32,11 @@ def index() -> rx.Component:
     )
 
 
-app = rx.App()
+app = rx.App(
+    stylesheets=[
+        "/fonts/myfont.css",  # This path is relative to assets/
+    ],
+)
 app.add_page(index)
 app.add_page(home.home)
+
