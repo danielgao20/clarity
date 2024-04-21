@@ -21,10 +21,10 @@ def assessment() -> rx.Component:
             # Audio Recording
             audio_capture.index(),
             #Video Recording
-            video_capture.index(),
+            # video_capture.index(),
             rx.button(
                 "Submit",
-                on_click=lambda: rx.redirect("/waiting"),
+                on_click=lambda: rx.redirect("/a2"),
                 size="3",
                 font_family="Metropolis",
                 background_color="#1B3EF3",
